@@ -9,9 +9,10 @@ public class OVChipkaart {
     public Date geldige_tot;
     public int klasse;
     public double saldo;
+    private Reiziger reiziger;
     private ArrayList<Product> products;
 
-    public OVChipkaart(int kaartnummer, Date geldige_tot, int klasse, int saldo) {
+    public OVChipkaart(int kaartnummer, Date geldige_tot, int klasse, double saldo) {
         this.kaartnummer = kaartnummer;
         this.geldige_tot = geldige_tot;
         this.klasse = klasse;
@@ -65,7 +66,15 @@ public class OVChipkaart {
         }
     }
 
+    public ArrayList<Product> getProducts() {
+        return products;
+    }
 
 
-
+    public void setReiziger(Reiziger reiziger) {
+        this.reiziger = reiziger;
+    }
+    public Reiziger getReiziger() {
+        return reiziger;
+    }
 }

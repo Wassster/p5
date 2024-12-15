@@ -73,5 +73,16 @@ public class Product {
             ovchipkaarts.remove(ovChipkaart);
         }
     }
+    @Override
+    public String toString() {
+        return "Product {" +
+                "product_nummer=" + product_nummer +
+                ", naam='" + naam + '\'' +
+                ", prijs=" + prijs +
+                ", beschrijving='" + beschrijving + '\'' +
+                ", gekoppelde OV-chipkaarten=" + ovchipkaarts +
+                '}';
+    }
+
 
 }
